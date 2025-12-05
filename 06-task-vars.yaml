@@ -7,5 +7,16 @@
     TRAINER: Nisar
   tasks:
   - name: print the variable
+    vars: # task level variables
+      COURSE: Ansible
     ansible.builtin.debug:
       msg: "course is {{ COURSE }}, duration is {{ DURATION }}, trainer is {{ TRAINER }}"
+  
+  - name: print the variable1
+    vars:
+      COURSE: Ansible
+    ansible.builtin.debug:
+      msg: "course is {{ COURSE }}, duration is {{ DURATION }}, trainer is {{ TRAINER }}"
+
+
+    
